@@ -1,6 +1,6 @@
 import pyautogui
 
-pyautogui.DELAY = 0.1
+pyautogui.DELAY = 0.5
 
 pyautogui
 
