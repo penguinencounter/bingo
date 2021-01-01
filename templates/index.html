@@ -3,11 +3,36 @@
     <head>
         <style>
             body {
-                background-color: #000060;
+                background-color: #222;
+                color: white;
+            }
+            .padded {
+                padding: 10px;
+            }
+            .lighter {
+                background-color: #444;
+            }
+            .centered {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                padding: 10px;
+            }
+            .center_horizontal {
+                margin: auto;
+                width: max-content;
+                display: block;
             }
         </style>
     </head>
     <body>
-        test
+        <div class='centered lighter padded'>
+            <form method="POST">
+                <label for='set_id'>Set ID:</label>
+                <input class='stretch' type="text" name='set_id' required autocomplete="off"><br>
+                <button type="submit" name='submit', class='center_horizontal'>Load</button>
+            </form>
+        </div>
     </body>
 </html>
