@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td {
+                width: 100px;
+                height: 100px;
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            {% for row in card %}
+            <tr>
+                {% for item in row %}
+                <td>{{ item|striptags }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
