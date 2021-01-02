@@ -1,0 +1,22 @@
+body {
+    background-color: #222222;
+    color: white;
+}
+.padded {
+    padding: 10px;
+}
+.lighter {
+    background-color: #444;
+}
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.center_horizontal {
+    margin: auto;
+    width: max-content;
+    display: block;
+}
